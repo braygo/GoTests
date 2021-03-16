@@ -4,11 +4,11 @@ import (
 	"fmt"
 )
 
-func Hello() string {
-	phrase := "Hello World"
+func Hello(name string) string {
+	phrase := "Hello, " + name
 	return phrase
 }
 
 func main() {
-	fmt.Println(Hello())
+	fmt.Println(Hello("Chris"))
 }
